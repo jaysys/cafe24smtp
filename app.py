@@ -29,7 +29,7 @@ def send_email():
         # Email sending
         smtp_server = "smtp.cafe24.com"
         smtp_port = 587
-        smtp_user_email = "vvvv@smartcity.cafe24.com"
+        smtp_user_email = "vvvv@xxxx.cafe24.com"
         smtp_user_pwd = "vvvv!"
 
         message = MIMEMultipart()
