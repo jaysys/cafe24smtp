@@ -5,11 +5,11 @@ from email.mime.text import MIMEText
 # 보내는 사람, 받는 사람, 비밀번호, SMTP 서버 설정
 smtp_server = "smtp.cafe24.com"
 smtp_port = 587
-smtp_user_email = "xxx@smartcity.cafe24.com"
+smtp_user_email = "xxx@xxxx.cafe24.com"
 smtp_user_password = "xxx!"
 
 # 이메일 내용 구성
-sender_email ="xxx@smartcity.cafe24.com" #이걸 체크하네?? smtp_user_email과 같아야 하네!??
+sender_email ="xxx@xxxx.cafe24.com" #이걸 체크하네?? smtp_user_email과 같아야 하네!??
 receiver_email = "xxxx@icloud.com"
 
 message = MIMEMultipart()
