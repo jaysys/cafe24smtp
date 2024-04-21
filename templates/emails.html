@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emails</title>
+</head>
+<body>
+    <h2>Emails</h2>
+    <table border="1">
+        <tr>
+            <th>Sender</th>
+            <th>Receiver</th>
+            <th>Subject</th>
+            <th>Body</th>
+        </tr>
+        {% for email in emails %}
+        <tr>
+            <td>{{ email[1] }}</td>
+            <td>{{ email[2] }}</td>
+            <td>{{ email[3] }}</td>
+            <td>{{ email[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
