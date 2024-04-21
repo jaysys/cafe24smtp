@@ -29,8 +29,8 @@ def send_email():
         # Email sending
         smtp_server = "smtp.cafe24.com"
         smtp_port = 587
-        smtp_user_email = "xxx@smartcity.cafe24.com"
-        smtp_user_pwd = "xxx!"
+        smtp_user_email = "vvvv@smartcity.cafe24.com"
+        smtp_user_pwd = "vvvv!"
 
         message = MIMEMultipart()
         message["From"] = sender_email
@@ -40,6 +40,7 @@ def send_email():
 
         server = smtplib.SMTP(smtp_server, smtp_port)
         #server.starttls()
+        server.set_debuglevel(1)  # 디버그 모드 활성화
         server.login(smtp_user_email, smtp_user_pwd)
         server.sendmail(sender_email, receiver_email, message.as_string())
         server.quit()
